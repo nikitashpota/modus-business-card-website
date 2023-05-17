@@ -1,0 +1,43 @@
+.card {
+  height: 75vh;
+  max-width: 520px;
+  min-width: 420px;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.card_delete {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.card_delete:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card_title__box {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: rgba(30, 29, 27, 0.785);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.card_title__text {
+  font-size: 1rem;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .card {
+    height: 78vh;
+    min-width: 96vw;
+    position: relative;
+  }
+}

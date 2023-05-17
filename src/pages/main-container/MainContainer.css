@@ -1,0 +1,23 @@
+.app {
+  position: relative;
+}
+
+.app_navbar {
+  background-color: #242424;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.tag_container {
+  margin: 5rem 0 1rem 1rem;
+}
+
+.tag__font {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}

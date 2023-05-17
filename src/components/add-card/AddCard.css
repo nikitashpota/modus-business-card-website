@@ -1,0 +1,26 @@
+.add-card {
+  height: 75vh;
+  max-width: 520px;
+  min-width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+
+.add-card_img {
+  cursor: pointer;
+}
+.add-card_img:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .add-card {
+    height: 78vh;
+    min-width: 96vw;
+  }
+}
