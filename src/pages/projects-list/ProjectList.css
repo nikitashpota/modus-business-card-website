@@ -1,30 +1,26 @@
 .project-list {
-  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   color: #1e1d1b;
   background-color: white;
+  padding: 5rem 1rem 0.5rem 1rem;
   box-sizing: border-box;
 }
 
 .project-list_items-container {
   max-width: 100%;
-  left: 0.5rem;
-  position: absolute;
-  right: 0.5rem;
-  bottom: 1rem;
+  flex: 2 0 0;
 }
 
 .project-list_items {
-  height: 77vh;
+  height: 100%;
   display: flex;
   gap: 1rem;
   flex-direction: row;
   overflow-x: auto;
 }
-
 
 @media (max-width: 480px) {
   .project-list_items {
@@ -37,7 +33,6 @@
   }
 
   .project-list_items {
-    height: 80vh;
     display: flex;
     gap: 1rem;
     flex-direction: row;

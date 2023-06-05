@@ -1,5 +1,5 @@
 .add-card {
-  height: 75vh;
+  height: calc(100% - 0.5rem);
   max-width: 520px;
   min-width: 420px;
   display: flex;

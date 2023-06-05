@@ -17,6 +17,7 @@
 
 .item {
   font-size: 14px;
+  min-width: 100px;
   margin: 0 1rem 0 1rem;
 }
 

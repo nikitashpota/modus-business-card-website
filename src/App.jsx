@@ -1,8 +1,8 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import Login from "./pages/login/login";
-import Register from "./pages/register/register";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 import ProjectItem from "./pages/project-item/ProjectItem";
 import AddProject from "./pages/add-project/AddProject";
 import AddNews from "./pages/add-news/AddNews";

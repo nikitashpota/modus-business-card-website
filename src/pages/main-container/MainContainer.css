@@ -13,11 +13,10 @@
 }
 
 .tag_container {
-  margin: 5rem 0 1rem 1rem;
+  flex: 80px 0 0;
 }
 
 .tag__font {
   font-weight: 400;
   font-size: 2rem;
-  margin-bottom: 2rem;
 }

@@ -1,5 +1,5 @@
 .card {
-  height: 75vh;
+  height: calc(100% - 0.5rem);
   max-width: 520px;
   min-width: 420px;
   position: relative;
@@ -7,6 +7,7 @@
 }
 
 .card_delete {
+  width: 15px;
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
@@ -36,8 +37,7 @@
 
 @media (max-width: 480px) {
   .card {
-    height: 78vh;
-    min-width: 96vw;
+    min-width: 100%;
     position: relative;
   }
 }
