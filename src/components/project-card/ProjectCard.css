@@ -1,9 +1,14 @@
 .card {
+  box-shadow: 5px 5px 5px 0px #00000056;
   height: calc(100% - 0.5rem);
   max-width: 520px;
   min-width: 420px;
   position: relative;
   border-radius: 0.5rem;
+}
+
+.card:hover {
+  background-size: 100%;
 }
 
 .card_delete {

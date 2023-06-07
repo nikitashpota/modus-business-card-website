@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contacts.css";
+import MyMap from "../../components/my-map/MyMap";
 
 const Contacts = ({ id }) => {
   return (
@@ -15,7 +16,7 @@ const Contacts = ({ id }) => {
       <div className="contacts_container">
         <h2 className="tag__font">Контакты</h2>
         <div className="contacts_data">
-          <div className="contacts_address">
+          <div className="contacts_address contacts_item">
             <p className="contacts_text left">
               Наш адрес:
               <br />
@@ -25,7 +26,10 @@ const Contacts = ({ id }) => {
               <br />3 этаж
             </p>
           </div>
-          <div className="contacts_email">
+          <div className="contacts_item">
+            <MyMap />
+          </div>
+          <div className="contacts_email contacts_item">
             <p className="contacts_text right">
               По общим вопросам:
               <br />

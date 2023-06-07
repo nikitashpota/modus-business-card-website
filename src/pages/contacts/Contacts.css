@@ -10,16 +10,17 @@
 }
 
 .contacts_data {
-  /* margin: 0 10rem 0 10rem; */
   min-height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts_address {
-  display: flex;
-  flex-direction: column;
+}
+
+.contacts_item {
 }
 
 .contacts_text {

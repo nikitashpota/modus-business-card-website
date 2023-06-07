@@ -118,7 +118,7 @@ const Navbar = () => {
             offset={0}
             duration={500}
           >
-            Новости
+            О нас
           </Link>
         </li>
         <li className="navbar_item item_main unselectable">
