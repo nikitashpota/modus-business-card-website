@@ -27,6 +27,8 @@ const ProjectCard = ({ project }) => {
     backgroundPosition: "center",
   };
 
+  
+
   const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   const openModal = () => {
