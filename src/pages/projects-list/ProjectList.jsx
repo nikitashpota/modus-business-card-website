@@ -17,9 +17,7 @@ const ProjectList = ({ tags, id, type }) => {
 
   const loadProjects = async () => {
     await Axios.get(
-      `${
-        import.meta.env.VITE_APP_API_URL
-      }/api/getProjectsOfThisType/${type}/${offset}/${limit}`
+      `/api/getProjectsOfThisType/${type}/${offset}/${limit}`
     )
       .then((response) => {
         const newArray = response.data;

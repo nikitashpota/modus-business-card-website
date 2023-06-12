@@ -38,8 +38,8 @@ const Scene = () => {
         files="./img/pizzo_pernice_puresky_1k.hdr"
         background={false}
       />
-      <Model url={"./models/KB3.glb"} />
-      <Rig />
+      {/* <Model url={"./models/KB3.glb"} /> */}
+      {/* <Rig /> */}
     </Canvas>
   );
 };
