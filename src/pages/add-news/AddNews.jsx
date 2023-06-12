@@ -32,7 +32,7 @@ const AddNews = () => {
     formData.append("image", image);
 
     await Axios.post(
-      `${import.meta.env.VITE_APP_API_URL}/api/addNews`,
+      `/api/addNews`,
       formData,
       {
         headers: { "Content-Type": "multipart/form-data" },

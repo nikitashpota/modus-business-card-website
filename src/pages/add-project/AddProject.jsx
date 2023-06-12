@@ -43,7 +43,7 @@ const AddProject = () => {
     });
 
     await Axios.post(
-      `${import.meta.env.VITE_APP_API_URL}/api/addProject`,
+      `/api/addProject`,
       formData,
       {
         headers: { "Content-Type": "multipart/form-data" },

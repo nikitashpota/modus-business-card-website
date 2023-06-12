@@ -17,9 +17,7 @@ const News = () => {
 
   const loadNews = async () => {
     await Axios.get(
-      `${
-        import.meta.env.VITE_APP_API_URL
-      }/api/getNewsOfThisType/${offset}/${limit}`
+      `/api/getNewsOfThisType/${offset}/${limit}`
     )
       .then((response) => {
         const newArray = response.data;
