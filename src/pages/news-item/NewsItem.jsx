@@ -11,7 +11,7 @@ const NewsItem = () => {
   const { id, newsName } = news;
 
   React.useEffect(() => {
-    Axios.get(`${import.meta.env.VITE_APP_API_URL}/api/getNews/${id}`)
+    Axios.get(`/api/getNews/${id}`)
       .then((response) => {
         console.log(response.data);
         setNews(response.data);

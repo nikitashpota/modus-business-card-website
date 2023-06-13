@@ -16,7 +16,7 @@ const ProjectItem = () => {
 
   React.useEffect(() => {
     Axios.get(
-      `${import.meta.env.VITE_APP_API_URL}/api/getProject/${project.id}`
+      `/api/getProject/${project.id}`
     ).then((response) => {
       setProject(response.data);
     });

@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
   };
 
   const confirmModal = () => {
-    Axios.delete(`${import.meta.env.VITE_APP_API_URL}/api/deleteProject/${id}`);
+    Axios.delete(`/api/deleteProject/${id}`);
     window.location.reload();
     setIsModalOpen(false);
   };

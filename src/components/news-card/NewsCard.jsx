@@ -35,7 +35,7 @@ const NewsCard = ({ news }) => {
   };
 
   const confirmModal = () => {
-    Axios.delete(`${import.meta.env.VITE_APP_API_URL}/api/deleteNews/${id}`);
+    Axios.delete(`/api/deleteNews/${id}`);
     window.location.reload();
     setIsModalOpen(false);
   };
