@@ -8,7 +8,7 @@ const vec = new Vector3();
 
 const Rig = () => {
   return useFrame(({ camera, mouse }) => {
-    vec.set(-mouse.x * 0.6, -mouse.y * 0.2, camera.position.z);
+    vec.set(-mouse.x * 2, -mouse.y * 0.3, camera.position.z);
     camera.position.lerp(vec, 0.03);
     camera.lookAt(0, 0, 0);
   });
@@ -33,13 +33,13 @@ const Model = ({ url }) => {
 
 const Scene = () => {
   return (
-    <Canvas camera={{ fov: 40, near: 0.1, far: 1000, position: [0, 0, 10] }}>
+    <Canvas camera={{ fov: 40, near: 0.1, far: 1000, position: [0, 0, 20] }}>
       <Environment
         files="./img/pizzo_pernice_puresky_1k.hdr"
         background={false}
       />
-      {/* <Model url={"./models/KB3.glb"} /> */}
-      {/* <Rig /> */}
+      <Model url={"./models/KB3.glb"} />
+      <Rig />
     </Canvas>
   );
 };
