@@ -23,14 +23,17 @@
 }
 
 @media (max-width: 480px) {
-  .project-list_items {
+  /* .project-list_items {
     height: 80vh;
     display: flex;
     gap: 1rem;
     flex-direction: row;
     cursor: grab;
     overflow-x: auto;
-  }
+  } */
+
+  .project-list_items-container {
+    padding-bottom: 2rem;
 
   .project-list_items {
     display: flex;

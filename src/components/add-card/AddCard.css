@@ -20,7 +20,6 @@
 
 @media (max-width: 480px) {
   .add-card {
-    height: 78vh;
-    min-width: 96vw;
+    min-width: 100%;
   }
 }
