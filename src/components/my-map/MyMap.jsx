@@ -1,17 +1,22 @@
-import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
-
+import Map, { Marker } from "react-map-gl";
+const MAPBOX_TOKEN =
+  "pk.eyJ1IjoibnNocG90YSIsImEiOiJjbGl1ZTV4b28waHRyM2dteW5vZmljdmZ6In0.icHkmGpPpYWNP-ivSaE3Xw";
+const MAP_STYLE = "mapbox://styles/nshpota/cliuohu0t008u01qygthg3qct";
+//mapboxAccessToken={MAPBOX_TOKEN}
 const MyMap = () => {
   return (
-      <YMaps query={{ lang: "en_RU" }}>
-        <Map
-          width={450}
-          height={250}
-          defaultState={{ zoom: 15, center: [55.751574, 37.573856] }}
-        >
-          <Placemark />
-        </Map>
-      </YMaps>
-
+    <Map
+      initialViewState={{
+        latitude: 55.7558,
+        longitude: 37.6173,
+        zoom: 15.4,
+      }}
+      styleDiffing
+      style={{ minHeight: "240px" }}
+      mapboxAccessToken={MAPBOX_TOKEN}
+      mapStyle={MAP_STYLE}
+      attributionControl={false}
+    />
   );
 };
 

@@ -4,7 +4,7 @@ import MyMap from "../../components/my-map/MyMap";
 
 const Contacts = ({ id }) => {
   return (
-    <div className="contacts" id={id}>
+    <>
       <hr
         style={{
           height: "1px",
@@ -13,8 +13,8 @@ const Contacts = ({ id }) => {
           backgroundColor: "gray",
         }}
       />
-      <div className="contacts_container">
-        <h2 className="tag__font">Контакты</h2>
+      <div className="contacts" id={id}>
+        <h2 className="contacts_title tag__font">Контакты</h2>
         <div className="contacts_data">
           <div className="contacts_address contacts_item">
             <p className="contacts_text left">
@@ -26,88 +26,47 @@ const Contacts = ({ id }) => {
               <br />3 этаж
             </p>
           </div>
-          <div className="contacts_item">
-            <MyMap />
-          </div>
           <div className="contacts_email contacts_item">
             <p className="contacts_text right">
               По общим вопросам:
               <br />
-              <span className="contacts_text__italic">modus@modus.ru</span>
+              <a className="contacts_text__mail" href="mailto:modus@modus.ru">
+                modus@modus.ru
+              </a>
               <br />
               По вопросам сотрудничества:
               <br />
-              <span className="contacts_text__italic">modus@modus.ru</span>
+              <a className="contacts_text__mail" href="mailto:modus@modus.ru">
+                modus@modus.ru
+              </a>
               <br />
               Резюме и портфолио:
               <br />
-              <span className="contacts_text__italic">modus@modus.ru</span>
+              <a className="contacts_text__mail" href="mailto:modus@modus.ru">
+                modus@modus.ru
+              </a>
               <br />
             </p>
           </div>
         </div>
+        <div className="contacts_map">
+          <MyMap />
+        </div>
         <div className="contacts_footer">
           <p className="contacts_footer__text">ООО Модус © 2023</p>
-          <svg
+          <img
             className="contacts_footer__icon"
-            fill="#ffffff"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"></path>
-            </g>
-          </svg>
-          <svg
+            width={30}
+            src="/img/telegram-icon.svg"
+          />
+          <img
             className="contacts_footer__icon"
-            fill="#ffffff"
-            width="24px"
-            height="24px"
-            viewBox="0 -5 34 34"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#ffffff"
-          >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path d="m13.544 16.419 9.216-4.762-9.216-4.818zm3.524-16.419q3.2 0 6.181.086t4.371.181l1.39.08q.019 0 .32.029c.167.013.317.033.465.061l-.026-.004q.134.029.448.086c.205.035.388.088.561.158l-.018-.006q.229.095.534.248c.225.114.419.238.599.377l-.008-.006c.203.158.383.323.549.502l.003.003c.102.107.199.222.288.342l.007.01c.202.318.388.686.537 1.071l.015.044c.24.559.417 1.207.501 1.885l.004.035q.152 1.219.24 2.6t.105 2.16v3.352c.001.078.001.171.001.263 0 1.853-.125 3.678-.367 5.465l.023-.208c-.086.704-.255 1.344-.498 1.946l.018-.051c-.162.447-.368.834-.62 1.186l.01-.015-.266.32c-.169.182-.349.347-.542.497l-.01.008c-.171.134-.365.254-.571.353l-.019.008q-.305.143-.534.24c-.156.064-.338.117-.527.15l-.016.002q-.314.057-.457.086t-.438.057-.314.029q-4.775.372-11.937.372-3.943-.038-6.848-.124t-3.819-.143l-.934-.08-.686-.08c-.404-.05-.757-.117-1.102-.204l.062.013c-.376-.118-.697-.253-1.003-.415l.032.015c-.417-.205-.772-.467-1.075-.78l-.001-.001c-.102-.107-.199-.222-.288-.342l-.007-.01c-.202-.318-.388-.686-.537-1.071l-.015-.044c-.24-.559-.417-1.207-.501-1.885l-.004-.035q-.152-1.219-.24-2.6t-.105-2.16v-3.352c-.001-.078-.001-.171-.001-.263 0-1.853.125-3.678.367-5.465l-.023.208c.086-.704.255-1.344.498-1.946l-.018.051c.162-.447.368-.834.62-1.186l-.01.015.266-.32c.169-.182.349-.347.542-.497l.01-.008c.172-.134.365-.257.57-.362l.021-.01q.305-.152.534-.248c.156-.064.338-.117.527-.15l.016-.002q.314-.057.448-.086c.121-.024.271-.044.424-.056l.015-.001q.305-.029.32-.029 4.783-.35 11.946-.35z"></path>
-            </g>
-          </svg>
-          <svg
-            className="contacts_footer__icon"
-            fill="#ffffff"
-            width="24px"
-            height="24px"
-            viewBox="0 0 32 32"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <title>github</title>{" "}
-              <path d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"></path>{" "}
-            </g>
-          </svg>
+            width={30}
+            src="/img/github-icon.svg"
+          />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

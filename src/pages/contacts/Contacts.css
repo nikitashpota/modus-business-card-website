@@ -1,30 +1,36 @@
 .contacts {
-  height: 300px;
   width: 100%;
   color: #ffff;
+  display: flex;
+  flex-direction: column;
 }
 
-.contacts_container {
-  height: 100%;
+.contacts_title {
   margin: 2rem 0 1rem 1rem;
 }
 
 .contacts_data {
-  min-height: 100%;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .contacts_address {
 }
 
+.contacts_map {
+  margin-bottom: 2rem;
+}
+
 .contacts_item {
 }
 
+.contacts_text__mail {
+  color: #ffff;
+}
+
 .contacts_text {
-  font-size: 14px;
   line-height: 2;
 }
 
@@ -38,7 +44,7 @@
   padding-bottom: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -48,17 +54,13 @@
 
 @media (max-width: 480px) {
   .contacts_data {
-    margin: 0 0.5rem 0 0.5rem;
+    margin: 0 0.5rem 2rem 0.5rem;
     flex-direction: column;
   }
 
   .contacts_container {
     height: 100%;
     margin: 2rem 1rem 0 1rem;
-  }
-
-  .contacts_footer__icon {
-    display: none;
   }
 
   .contacts_footer {
