@@ -34,6 +34,7 @@
 
   .project-list_items-container {
     padding-bottom: 2rem;
+  }
 
   .project-list_items {
     display: flex;
