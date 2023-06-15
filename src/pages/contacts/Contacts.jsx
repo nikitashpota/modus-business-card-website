@@ -28,12 +28,6 @@ const Contacts = ({ id }) => {
           </div>
           <div className="contacts_email contacts_item">
             <p className="contacts_text right">
-              По общим вопросам:
-              <br />
-              <a className="contacts_text__mail" href="mailto:modus@modus.ru">
-                modus@modus.ru
-              </a>
-              <br />
               По вопросам сотрудничества:
               <br />
               <a className="contacts_text__mail" href="mailto:modus@modus.ru">
@@ -54,16 +48,6 @@ const Contacts = ({ id }) => {
         </div>
         <div className="contacts_footer">
           <p className="contacts_footer__text">ООО Модус © 2023</p>
-          <img
-            className="contacts_footer__icon"
-            width={30}
-            src="/img/telegram-icon.svg"
-          />
-          <img
-            className="contacts_footer__icon"
-            width={30}
-            src="/img/github-icon.svg"
-          />
         </div>
       </div>
     </>
