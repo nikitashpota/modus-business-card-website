@@ -30,14 +30,20 @@ const Contacts = ({ id }) => {
             <p className="contacts_text right">
               По вопросам сотрудничества:
               <br />
-              <a className="contacts_text__mail" href="mailto:modus@modus.ru">
-                modus@modus.ru
+              <a
+                className="contacts_text__mail"
+                href="mailto:s.go@snipgroup.ru"
+              >
+                s.go@snipgroup.ru
               </a>
               <br />
               Резюме и портфолио:
               <br />
-              <a className="contacts_text__mail" href="mailto:modus@modus.ru">
-                modus@modus.ru
+              <a
+                className="contacts_text__mail"
+                href="mailto:e.sazanova@snipgroup.ru"
+              >
+                e.sazanova@snipgroup.ru
               </a>
               <br />
             </p>
