@@ -10,7 +10,6 @@ const markers = [
   { id: 2, latitude: 55.769, longitude: 37.596 }, //55.769,37.596
 ];
 
-//mapboxAccessToken={MAPBOX_TOKEN}
 const MyMap = () => {
   const pins = useMemo(() => (
     <Marker
@@ -40,7 +39,7 @@ const MyMap = () => {
         attributionControl={false}
         style={{ minHeight: "240px", maxHeight: "240px" }}
       >
-        {pins}
+        {/* {pins} */}
       </Map>
     </>
   );

@@ -9,11 +9,6 @@
   margin: 2rem 0 1rem 1rem;
 }
 
-#map {
-  width: 100vw;
-  height: 100vh;
-}
-
 .contacts_data {
   margin-bottom: 3rem;
   display: flex;
@@ -21,15 +16,15 @@
   justify-content: space-evenly;
 }
 
-.contacts_address {
-}
+/* .contacts_address {
+} */
 
 .contacts_map {
   margin-bottom: 2rem;
 }
 
-.contacts_item {
-}
+/* .contacts_item {
+} */
 
 .contacts_text__mail {
   color: #ffff;

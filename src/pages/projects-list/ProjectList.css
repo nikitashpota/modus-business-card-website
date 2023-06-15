@@ -12,6 +12,7 @@
 .project-list_items-container {
   max-width: 100%;
   flex: 2 0 0;
+  padding-bottom: 2rem;
 }
 
 .project-list_items {
@@ -32,9 +33,6 @@
     overflow-x: auto;
   } */
 
-  .project-list_items-container {
-    padding-bottom: 2rem;
-  }
 
   .project-list_items {
     display: flex;
