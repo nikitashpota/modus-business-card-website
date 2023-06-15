@@ -23,7 +23,7 @@
 }
 
 .main_text {
-  background-color:  #242424db;;
+  background-color: #242424db;
   position: absolute;
   right: 3rem;
   max-width: 50%;
@@ -71,8 +71,6 @@
     /* line-height: 1.5; */
     text-align: right;
   }
-
-
 
   .typed-cursor {
     display: none;

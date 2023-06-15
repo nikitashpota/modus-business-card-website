@@ -61,7 +61,7 @@ const NewsCard = ({ news }) => {
         <Link
           to={`news/${id}`}
           state={{ news: news }}
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: "none", textAlign: "center" }}
         >
           <span className="card_title__text">{newsName}</span>
         </Link>

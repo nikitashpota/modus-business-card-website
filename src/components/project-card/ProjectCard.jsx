@@ -66,7 +66,7 @@ const ProjectCard = ({ project }) => {
         <Link
           to={`project/${id}`}
           state={{ project: project }}
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: "none", textAlign: "center" }}
         >
           <span className="card_title__text">{projectName}</span>
         </Link>

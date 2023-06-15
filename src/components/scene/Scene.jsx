@@ -15,12 +15,13 @@ const Rig = () => {
 };
 
 const Model = ({ url }) => {
-  const ref = useRef();
-
+  const ref = useRef(null);
+  // const gl = ref.current.getContext("webgl");
   const { scene } = useGLTF(url);
   const camera = new THREE.PerspectiveCamera(45, 1000, 100, 2000);
 
   scene.add(camera);
+  // console.log("web ", gl);
   return (
     <primitive
       ref={ref}
