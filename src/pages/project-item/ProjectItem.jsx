@@ -15,9 +15,7 @@ const ProjectItem = () => {
   const { id, projectName } = project;
 
   React.useEffect(() => {
-    Axios.get(
-      `/api/getProject/${project.id}`
-    ).then((response) => {
+    Axios.get(`/api/getProject/${project.id}`).then((response) => {
       setProject(response.data);
     });
   }, []);
@@ -60,12 +58,13 @@ const ProjectItem = () => {
 
       <pre className="project-item_description">{projectDescription}</pre>
       <div className="project-item_images">
-        <ScrollContainer
+        {/* <ScrollContainer
           hideScrollbars={false}
           className="project-item_images__list scroll-container"
         >
           {imagesList}
-        </ScrollContainer>
+        </ScrollContainer> */}
+        {imagesList}
       </div>
       <div className="project-item_authors">
         <p className="project-item_authors__header">Авторский коллектив:</p>
