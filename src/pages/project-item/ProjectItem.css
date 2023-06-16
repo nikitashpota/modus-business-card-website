@@ -25,7 +25,8 @@
   justify-content: center;
 } */
 
-.project-item_images{
+.project-item_images {
+  max-width: 100%;
   height: 70vh;
 }
 
@@ -36,7 +37,7 @@
 }
 
 .project-item_images__item-image {
-  height: calc(100% - 0.5rem);  
+  height: calc(100% - 0.5rem);
 }
 
 .project-item_authors {
