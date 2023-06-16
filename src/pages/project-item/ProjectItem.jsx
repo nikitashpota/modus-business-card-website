@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import ScrollContainer from "react-indiana-drag-scroll";
 import Axios from "axios";
@@ -11,12 +11,16 @@ import "./ProjectItem.css";
 const ProjectItem = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [project, setProject] = React.useState(location.state.project);
+  const [project, setProject] = useState(location.state.project);
+  const [selectedIcon, setSelectedIcon] = useState(null);
+  const [mainImage, setMainImage] = useState(null);
   const { id, projectName } = project;
 
   React.useEffect(() => {
     Axios.get(`/api/getProject/${project.id}`).then((response) => {
       setProject(response.data);
+      setMainImage(response.data?.projectImageUrls?.split(",")[0]);
+      setSelectedIcon(response.data?.projectImageUrls?.split(",")[0]);
     });
   }, []);
 
@@ -26,9 +30,21 @@ const ProjectItem = () => {
 
   const imagesList = projectImageUrls.split(",").map((image, index) => {
     return (
-      <div className="project-item_images__item" key={index}>
-        <img className="project-item_images__item-image" src={image} alt="" />
-      </div>
+      <img
+        key={index}
+        className={`project-item_images__item-image ${
+          selectedIcon === image
+            ? "project-item_images__item-image__border"
+            : ""
+        }`}
+        // className="project-item_images__item-image__border project-item_images__item-image"
+        src={image}
+        alt=""
+        onClick={() => {
+          setSelectedIcon(image);
+          setMainImage(image);
+        }}
+      />
     );
   });
 
@@ -57,15 +73,8 @@ const ProjectItem = () => {
       </div>
 
       <pre className="project-item_description">{projectDescription}</pre>
-      <div className="project-item_images">
-        {/* <ScrollContainer
-          hideScrollbars={false}
-          className="project-item_images__list scroll-container"
-        >
-          {imagesList}
-        </ScrollContainer> */}
-        {imagesList}
-      </div>
+      <img className="project-item_main-image" src={mainImage} alt="" />
+      <div className="project-item_images">{imagesList}</div>
       <div className="project-item_authors">
         <p className="project-item_authors__header">Авторский коллектив:</p>
         <div className="project-item_authors__list">{projectAuthors}</div>
