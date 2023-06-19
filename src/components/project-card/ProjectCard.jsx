@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
 
   const style = {
     backgroundImage: `url(${loading ? "img/loading.gif" : projectImageUrl})`,
-    backgroundSize: `${loading ? "25%" : "cover"}`,
+    backgroundSize: `${loading ? "25%" : "auto"}`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
   };
