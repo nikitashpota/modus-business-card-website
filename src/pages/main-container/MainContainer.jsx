@@ -15,9 +15,9 @@ function MainContainer() {
         <Navbar />
       </div>
       <Main title="Main" id="main" />
-      <ProjectList tags="Жилье - офисы" id="project1" type="Housing" />
+      <ProjectList tags="Жилые дома и офисы" id="project1" type="Housing" />
       <ProjectList
-        tags="Спорт - культура - образование"
+        tags="Объекты спорта, культуры и образования"
         id="project2"
         type="Public"
       />

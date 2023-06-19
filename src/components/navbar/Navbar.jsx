@@ -77,7 +77,7 @@ const Navbar = () => {
                   duration={500}
                   className="dropdown-item"
                 >
-                  Жилье - офисы
+                  Жилые дома и офисы
                 </Link>
               )}
               {!element2 ? null : (
@@ -90,7 +90,7 @@ const Navbar = () => {
                   duration={500}
                   className="dropdown-item"
                 >
-                  Спорт - культура - образование
+                  Объекты спорта, культуры и образования
                 </Link>
               )}
               {!element3 ? null : (
