@@ -11,19 +11,19 @@ const markers = [
 ];
 
 const MyMap = () => {
-  const pins = useMemo(() => (
-    <Marker
-      key={1}
-      latitude={55.77}
-      longitude={37.591}
-      anchor="bottom"
-      onClick={(e) => {
-        e.originalEvent.stopPropagation();
-      }}
-    >
-      <Pin />
-    </Marker>
-  ));
+  // const pins = useMemo(() => (
+  //   <Marker
+  //     key={1}
+  //     latitude={55.77}
+  //     longitude={37.591}
+  //     anchor="bottom"
+  //     onClick={(e) => {
+  //       e.originalEvent.stopPropagation();
+  //     }}
+  //   >
+  //     <Pin />
+  //   </Marker>
+  // ));
   return (
     <>
       <Map
@@ -34,12 +34,14 @@ const MyMap = () => {
           bearing: 0,
           pitch: 0,
         }}
-        mapStyle={MAP_STYLE}
+        mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={MAPBOX_TOKEN}
         attributionControl={false}
         style={{ minHeight: "240px", maxHeight: "240px" }}
       >
-        {/* {pins} */}
+        <Marker longitude={37.594} latitude={55.77} anchor="bottom">
+          <img src="img/pin.svg" />
+        </Marker>
       </Map>
     </>
   );
