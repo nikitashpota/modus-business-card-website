@@ -39,9 +39,9 @@ const MyMap = () => {
         attributionControl={false}
         style={{ minHeight: "240px", maxHeight: "240px" }}
       >
-        <Marker longitude={37.594} latitude={55.77} anchor="bottom">
+        {/* <Marker longitude={37.594} latitude={55.77} anchor="bottom">
           <img src="img/pin.svg" />
-        </Marker>
+        </Marker> */}
       </Map>
     </>
   );
