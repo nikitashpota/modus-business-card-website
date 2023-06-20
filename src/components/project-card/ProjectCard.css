@@ -41,7 +41,7 @@
 
 @media (max-width: 480px) {
   .card {
-    min-width: 95%;
+    min-width: 80%;
     position: relative;
   }
 }
