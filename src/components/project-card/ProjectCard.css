@@ -1,7 +1,7 @@
 .card {
   box-shadow: 5px 5px 5px 0px #00000056;
   height: calc(100% - 0.5rem);
-  min-width: 320px;
+  min-width: 420px;
   position: relative;
   border-radius: 0.5rem;
 }
