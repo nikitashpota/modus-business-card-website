@@ -34,7 +34,7 @@ const MyMap = () => {
           bearing: 0,
           pitch: 0,
         }}
-        mapStyle="mapbox://styles/mapbox/streets-v9"
+        mapStyle={MAP_STYLE}
         mapboxAccessToken={MAPBOX_TOKEN}
         attributionControl={false}
         style={{ minHeight: "240px", maxHeight: "240px" }}
