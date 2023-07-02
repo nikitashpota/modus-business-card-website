@@ -8,7 +8,7 @@ const MainText = () => {
   React.useEffect(() => {
     const options = {
       strings: [
-        `<h4>MODUS - бюро современной архитектуры.</h4>`,
+        `<h4>MODUS - бюро современной архитектуры</h4>`,
       ],
       typeSpeed: 40,
       cursorChar: "",

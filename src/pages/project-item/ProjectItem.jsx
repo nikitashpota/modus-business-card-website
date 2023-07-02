@@ -88,11 +88,11 @@ const ProjectItem = () => {
               <p className="project-item_information__header">
                 Начало проектирования:
               </p>
-              <pre className="project-item_description">2012</pre>
+              <pre className="project-item_description">2022</pre>
               <p className="project-item_information__header">
                 Ввод в эксплуатацию:
               </p>
-              <pre className="project-item_description">2020</pre>
+              <pre className="project-item_description">2024</pre>
               <p className="project-item_information__header">
                 Авторский коллектив:
               </p>
