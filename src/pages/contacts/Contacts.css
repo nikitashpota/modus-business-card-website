@@ -21,6 +21,7 @@
 
 .contacts_map {
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 /* .contacts_item {

@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import Map, { Marker } from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
 import Pin from "./Pin";
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoibnNocG90YSIsImEiOiJjbGl1ZTV4b28waHRyM2dteW5vZmljdmZ6In0.icHkmGpPpYWNP-ivSaE3Xw";
@@ -28,8 +29,8 @@ const MyMap = () => {
     <>
       <Map
         initialViewState={{
-          latitude: 55.77,
-          longitude: 37.594,
+          latitude: 55.7702,
+          longitude: 37.5912,
           zoom: 15.42,
           bearing: 0,
           pitch: 0,
@@ -39,9 +40,9 @@ const MyMap = () => {
         attributionControl={false}
         style={{ minHeight: "240px", maxHeight: "240px" }}
       >
-        {/* <Marker longitude={37.594} latitude={55.77} anchor="bottom">
-          <img src="img/pin.svg" />
-        </Marker> */}
+        <Marker longitude={37.5912} latitude={55.7702} anchor="bottom">
+          <Pin/>
+        </Marker>
       </Map>
     </>
   );
