@@ -64,6 +64,9 @@
 }
 
 @media (max-width: 480px) {
+  .main_image {
+    background-size: contain;
+  }
   /* .main_container {
     display: flex;
     flex-direction: column;
