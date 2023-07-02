@@ -18,12 +18,12 @@
 
 .tag__font {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .tag__font {
     font-size: 1.5rem;
   }
-}
+} */

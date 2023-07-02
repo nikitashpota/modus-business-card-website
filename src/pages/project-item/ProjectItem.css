@@ -50,7 +50,7 @@
 
 .project-item_images__item-image {
   /* height: calc(100% - 0.5rem); */
-  width: 20%;
+  width: 120px;
 }
 
 .project-item_images__item-image__border {

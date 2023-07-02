@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 import "./Main.css";
 
+
 const Main = ({ id }) => {
   const { ref, inView, entry } = useInView({
     threshold: 0,
@@ -13,9 +14,11 @@ const Main = ({ id }) => {
   return (
     <div className="main" id={id}>
       <div className="main_container">
-        <div ref={ref} className="main_art">
-          {!inView ? null : <Scene />}
+        <div className="main_image">
         </div>
+        {/* <div ref={ref} className="main_art">
+          {!inView ? null : <Scene />}
+        </div> */}
         <div className="main_text">
           <MainText />
         </div>

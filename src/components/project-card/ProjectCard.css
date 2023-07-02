@@ -1,13 +1,15 @@
 .card {
   box-shadow: 5px 5px 5px 0px #00000056;
-  height: calc(100% - 0.5rem);
-  min-width: 420px;
+  height: calc(100% - 1em);
+  min-width: 300px;
   position: relative;
   border-radius: 0.5rem;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .card:hover {
-  background-size: 100%;
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.679);
 }
 
 .card_delete {

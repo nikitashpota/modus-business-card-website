@@ -71,13 +71,35 @@ const ProjectItem = () => {
         </div>
         <h2 className="tag__font">{projectName}</h2>
       </div>
-
-      <pre className="project-item_description">{projectDescription}</pre>
-      <img className="project-item_main-image" src={mainImage} alt="" />
-      <div className="project-item_images">{imagesList}</div>
-      <div className="project-item_authors">
-        <p className="project-item_authors__header">Авторский коллектив:</p>
-        <div className="project-item_authors__list">{projectAuthors}</div>
+      <div className="">
+        <div>
+          <div>
+            <img className="project-item_main-image" src={mainImage} alt="" />
+            <div className="project-item_images">{imagesList}</div>
+          </div>
+          <div>
+            <div className="project-item_information">
+              <p className="project-item_information__header">Об объекте:</p>
+              <pre className="project-item_description">
+                {projectDescription}
+              </pre>
+              <p className="project-item_information__header">Адрес:</p>
+              <pre className="project-item_description">Москва</pre>
+              <p className="project-item_information__header">
+                Начало проектирования:
+              </p>
+              <pre className="project-item_description">2012</pre>
+              <p className="project-item_information__header">
+                Ввод в эксплуатацию:
+              </p>
+              <pre className="project-item_description">2020</pre>
+              <p className="project-item_information__header">
+                Авторский коллектив:
+              </p>
+              <div className="project-item_authors__list">{projectAuthors}</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

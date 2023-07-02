@@ -12,10 +12,11 @@
 .project-list_items-container {
   max-width: 100%;
   flex: 2 0 0;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .project-list_items {
+  padding-top: 0.5rem;
   height: 100%;
   display: flex;
   gap: 1rem;

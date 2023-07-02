@@ -25,8 +25,8 @@ const Model = ({ url }) => {
   return (
     <primitive
       ref={ref}
-      position={[-5, -2, 10]}
-      rotation={[0, -30.2, 0]}
+      position={[-10, 0, 1]}
+      rotation={[0, 0, 0]}
       object={scene}
     />
   );
@@ -40,7 +40,7 @@ const Scene = () => {
         background={false}
       />
       <Model url={"./models/KB3.glb"} />
-      <Rig />
+      {/* <Rig /> */}
     </Canvas>
   );
 };
