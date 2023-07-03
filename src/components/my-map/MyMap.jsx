@@ -29,8 +29,8 @@ const MyMap = () => {
     <>
       <Map
         initialViewState={{
-          latitude: 55.7702,
-          longitude: 37.5912,
+          latitude: 55.7701,
+          longitude: 37.5925,
           zoom: 15.42,
           bearing: 0,
           pitch: 0,
@@ -41,7 +41,11 @@ const MyMap = () => {
         style={{ minHeight: "240px", maxHeight: "240px" }}
       >
         <Marker longitude={37.5912} latitude={55.7702} anchor="bottom">
-          <Pin/>
+          <Pin />
+        </Marker>
+
+        <Marker longitude={37.5965} latitude={55.76925} anchor="bottom">
+          <Pin header="м. Маяковская" fill="rgb(9 195 0)" />
         </Marker>
       </Map>
     </>

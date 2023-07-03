@@ -26,6 +26,7 @@
 } */
 
 .project-item_images {
+  margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
