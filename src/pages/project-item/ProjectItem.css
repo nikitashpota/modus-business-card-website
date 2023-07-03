@@ -43,10 +43,16 @@
 
 .project-item_main-image {
   margin: 0 auto;
-  max-height: 65vh;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   object-fit: contain;
   width: 100%;
   margin-bottom: 0.5rem;
+  
+  transition: background-image  1s ease;
 }
 
 .project-item_images__item-image {

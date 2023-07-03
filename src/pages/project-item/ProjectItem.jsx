@@ -74,7 +74,8 @@ const ProjectItem = () => {
       <div className="">
         <div>
           <div>
-            <img className="project-item_main-image" src={mainImage} alt="" />
+            <div className="project-item_main-image" style={{backgroundImage: `url(${mainImage})`}}>1</div>
+            {/* src={mainImage} alt="" /> */}
             <div className="project-item_images">{imagesList}</div>
           </div>
           <div>

@@ -24,7 +24,7 @@
 }
 
 .main_image {
-  background-image: url(/img/main-image.jpg);
+  background-image: url(/img/main-image.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
