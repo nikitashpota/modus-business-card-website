@@ -37,7 +37,6 @@ const ProjectItem = () => {
             ? "project-item_images__item-image__border"
             : ""
         }`}
-        // className="project-item_images__item-image__border project-item_images__item-image"
         src={image}
         alt=""
         onClick={() => {
@@ -51,55 +50,52 @@ const ProjectItem = () => {
   return (
     <div className="project-item">
       <ScrollToTop />
-      <div className="project-item_title__container">
-        <div
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          <svg
-            className="project-item_title__back"
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            fill="white"
-            clipRule="evenodd"
+
+      <div
+        className="project-item_main-image"
+        style={{ backgroundImage: `url(${mainImage})` }}
+      >
+        <div className="project-item_title__container">
+          <div
+            onClick={() => {
+              navigate("/");
+            }}
           >
-            <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-4.828 11.5l4.608 3.763-.679.737-6.101-5 6.112-5 .666.753-4.604 3.747h11.826v1h-11.828z" />
-          </svg>
+            <svg
+              className="project-item_title__back"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fillRule="evenodd"
+              fill="#242424"
+              clipRule="evenodd"
+            >
+              <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-4.828 11.5l4.608 3.763-.679.737-6.101-5 6.112-5 .666.753-4.604 3.747h11.826v1h-11.828z" />
+            </svg>
+          </div>
+          <h2 className="tag__font project-item_title__color">{projectName}</h2>
         </div>
-        <h2 className="tag__font">{projectName}</h2>
+        <div className="project-item_images">{imagesList}</div>
       </div>
-      <div className="">
-        <div>
-          <div>
-            <div className="project-item_main-image" style={{backgroundImage: `url(${mainImage})`}}>1</div>
-            {/* src={mainImage} alt="" /> */}
-            <div className="project-item_images">{imagesList}</div>
-          </div>
-          <div>
-            <div className="project-item_information">
-              <p className="project-item_information__header">Об объекте:</p>
-              <pre className="project-item_description">
-                {projectDescription}
-              </pre>
-              <p className="project-item_information__header">Адрес:</p>
-              <pre className="project-item_description">Москва</pre>
-              <p className="project-item_information__header">
-                Начало проектирования:
-              </p>
-              <pre className="project-item_description">2022</pre>
-              <p className="project-item_information__header">
-                Ввод в эксплуатацию:
-              </p>
-              <pre className="project-item_description">2024</pre>
-              <p className="project-item_information__header">
-                Авторский коллектив:
-              </p>
-              <div className="project-item_authors__list">{projectAuthors}</div>
-            </div>
-          </div>
+
+      <div>
+        <div className="project-item_information">
+          <p className="project-item_information__header">Об объекте:</p>
+          <pre className="project-item_description">{projectDescription}</pre>
+          <p className="project-item_information__header">Адрес:</p>
+          <pre className="project-item_description">Москва</pre>
+          <p className="project-item_information__header">
+            Начало проектирования:
+          </p>
+          <pre className="project-item_description">2022</pre>
+          <p className="project-item_information__header">
+            Ввод в эксплуатацию:
+          </p>
+          <pre className="project-item_description">2024</pre>
+          <p className="project-item_information__header">
+            Авторский коллектив:
+          </p>
+          <div className="project-item_authors__list">{projectAuthors}</div>
         </div>
       </div>
     </div>
