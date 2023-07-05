@@ -75,7 +75,11 @@ const ProjectItem = () => {
           </div>
           <h2 className="tag__font project-item_title__color">{projectName}</h2>
         </div>
-        <div className="project-item_images">{imagesList}</div>
+
+        <div className="project-item_images">
+
+          {imagesList}
+        </div>
       </div>
 
       <div>

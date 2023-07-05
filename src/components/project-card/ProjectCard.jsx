@@ -6,12 +6,11 @@ import "./ProjectCard.css";
 import Axios from "axios";
 import ModalYesNo from "../modal-yesno/ModalYesNo";
 
-
 const ProjectCard = ({ project }) => {
   const { id, projectName, projectImageUrl } = project;
   const { isAuth } = useAuth();
   const [loading, setLoading] = React.useState(true);
-  
+
   React.useEffect(() => {
     const image = new Image();
     image.onload = () => {
@@ -26,8 +25,6 @@ const ProjectCard = ({ project }) => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
   };
-
-  
 
   const [isModalOpen, setIsModalOpen] = React.useState(false);
 
@@ -46,7 +43,12 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="card" style={style}>
+    <Link
+      className="card"
+      style={style}
+      to={`project/${id}`}
+      state={{ project: project }}
+    >
       {isAuth ? (
         <img
           className="card_delete"
@@ -63,15 +65,11 @@ const ProjectCard = ({ project }) => {
       />
 
       <div className="card_title__box" onClick={() => {}}>
-        <Link
-          to={`project/${id}`}
-          state={{ project: project }}
-          style={{ textDecoration: "none", textAlign: "center" }}
-        >
+        <div style={{ textDecoration: "none", textAlign: "center" }}>
           <span className="card_title__text">{projectName}</span>
-        </Link>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
