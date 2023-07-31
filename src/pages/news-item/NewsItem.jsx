@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import ScrollContainer from "react-indiana-drag-scroll";
 import Axios from "axios";
 import ScrollToTop from "../../components/scroll-to-top/ScrollToTop";
+import "./NewsItem.css"
 
 const NewsItem = () => {
   const navigate = useNavigate();
@@ -25,25 +26,25 @@ const NewsItem = () => {
 
   if (!newsImageUrl) return;
 
-  const imagesList = newsImageUrl.split(",").map((image, index) => {
-    return (
-      <div className="project-item_images__item" key={index}>
-        <img className="project-item_images__item-image" src={image} alt="" />
-      </div>
-    );
-  });
+  // const imagesList = newsImageUrl.split(",").map((image, index) => {
+  //   return (
+  //     <div className="project-item_images__item" key={index}>
+  //       <img className="project-item_images__item-image" src={image} alt="" />
+  //     </div>
+  //   );
+  // });
 
   return (
-    <div className="project-item">
+    <div className="news-item">
       <ScrollToTop />
-      <div className="project-item_title__container">
+      <div className="news-item_title__container">
         <div
           onClick={() => {
             navigate("/");
           }}
         >
           <svg
-            className="project-item_title__back"
+            className="news-item_title__back"
             width="24"
             height="24"
             xmlns="http://www.w3.org/2000/svg"
@@ -56,15 +57,15 @@ const NewsItem = () => {
         </div>
         <h2 className="tag__font">{newsName}</h2>
       </div>
-      <pre className="project-item_description">{newsDescription}</pre>
-      <div className="project-item_images">
+      <pre className="news-item_description">{newsDescription}</pre>
+      {/* <div className="project-item_images">
         <ScrollContainer
           hideScrollbars={false}
           className="project-item_images__list scroll-container"
         >
           {imagesList}
         </ScrollContainer>
-      </div>
+      </div> */}
     </div>
   );
 };

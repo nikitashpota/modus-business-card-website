@@ -41,7 +41,12 @@ const NewsCard = ({ news }) => {
   };
 
   return (
-    <div className="card" style={style}>
+    <Link
+      to={`news/${id}`}
+      state={{ news: news }}
+      className="card"
+      style={style}
+    >
       {isAuth ? (
         <img
           className="card_delete"
@@ -58,15 +63,11 @@ const NewsCard = ({ news }) => {
       />
 
       <div className="card_title__box" onClick={() => {}}>
-        <Link
-          to={`news/${id}`}
-          state={{ news: news }}
-          style={{ textDecoration: "none", textAlign: "center" }}
-        >
+        <div style={{ textDecoration: "none", textAlign: "center" }}>
           <span className="card_title__text">{newsName}</span>
-        </Link>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -94,3 +94,8 @@
   margin-bottom: 0.5rem;
   font-size: 14px;
 }
+
+@media (max-width: 480px) {
+  .project-item_main-image {
+    background-attachment:local;
+  }}

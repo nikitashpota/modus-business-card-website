@@ -14,9 +14,6 @@ const Main = ({ id }) => {
   return (
     <div className="main" id={id}>
       <div className="main_container main_image">
-        {/* <div ref={ref} className="main_art">
-          {!inView ? null : <Scene />}
-        </div> */}
         <div className="main_text">
           <MainText />
         </div>
