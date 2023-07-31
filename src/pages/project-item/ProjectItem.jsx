@@ -87,7 +87,7 @@ const ProjectItem = () => {
           <p className="project-item_information__header">Об объекте:</p>
           <pre className="project-item_description">{projectDescription}</pre>
           <p className="project-item_information__header">Адрес:</p>
-          <pre className="project-item_description">Москва</pre>
+          <pre className="project-item_description">г. Москва</pre>
           <p className="project-item_information__header">
             Начало проектирования:
           </p>
@@ -95,7 +95,7 @@ const ProjectItem = () => {
           <p className="project-item_information__header">
             Ввод в эксплуатацию:
           </p>
-          <pre className="project-item_description">2024</pre>
+          <pre className="project-item_description">2025</pre>
           <p className="project-item_information__header">
             Авторский коллектив:
           </p>
